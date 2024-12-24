@@ -9,7 +9,7 @@
 using namespace std;
 
 int main() {
-	Employe employe;
+	/*Employe employe;
 
 	employe.nom = "bonnevay";
 	employe.prenom = "Maxime";
@@ -19,6 +19,16 @@ int main() {
 
 	cout << employe.nom << " " << employe.prenom << " embauche le " << employe.dateEmbauche.jour << "/" <<
 		employe.dateEmbauche.mois << "/" << employe.dateEmbauche.annee << endl;
+
+	*/
+
+	Employe employe;
+
+	cout << "Saisir les informations de l'employe :\n";
+	saisirEmploye(employe);
+
+	cout << "\nInformations de l'employe :\n";
+	afficherEmploye(employe);
 
 	return 0;
 }
