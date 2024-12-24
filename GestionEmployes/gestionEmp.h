@@ -9,3 +9,8 @@ using namespace std;
 struct Date {
     int jour, mois, annee;
 };
+
+struct Employe {
+    string nom, prenom;
+    Date dateEmbauche, datePrisePoste;
+};
