@@ -1,21 +1,30 @@
 // TP 5 Structure enum union.cpp : Ce fichier contient la fonction 'main'. L'exécution du programme commence et se termine à cet endroit.
 //
 
+#include "Transgerbeur.h"
 #include <iostream>
 
-int main()
-{
-    int var 
-        dhgjdthjcf
+using namespace std;
+
+int main() {
+	char dest[20] = "abcdefg";
+	int taille = strcpy_s(dest, sizeof(dest), pa1.reference);
+
+	pa1.poids = 5;
+	ETAT etatC1 = vide;
+
+	c1.pal = pa1;
+	c1.e = etatC1;
+	c1.x = 2;
+	c1.y = 3;
+
+	pa1.poids = 3;
+	c2.pal = pa1;
+	c2.e = rouleau;
+
+	CASIER tabCasier[2] = { c1, c2 };
+	// Affichage
+	cout << "rouleau : " << sizeof(rouleau) << " pa1 : " << sizeof(pa1) << " etatC1 : " << sizeof(etatC1) << " c1 : " << sizeof(c1) << " tabCasier : " << sizeof(tabCasier);
+
+	return 0;
 }
-
-// Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
-// Déboguer le programme : F5 ou menu Déboguer > Démarrer le débogage
-
-// Astuces pour bien démarrer : 
-//   1. Utilisez la fenêtre Explorateur de solutions pour ajouter des fichiers et les gérer.
-//   2. Utilisez la fenêtre Team Explorer pour vous connecter au contrôle de code source.
-//   3. Utilisez la fenêtre Sortie pour voir la sortie de la génération et d'autres messages.
-//   4. Utilisez la fenêtre Liste d'erreurs pour voir les erreurs.
-//   5. Accédez à Projet > Ajouter un nouvel élément pour créer des fichiers de code, ou à Projet > Ajouter un élément existant pour ajouter des fichiers de code existants au projet.
-//   6. Pour rouvrir ce projet plus tard, accédez à Fichier > Ouvrir > Projet et sélectionnez le fichier .sln.
