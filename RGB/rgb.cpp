@@ -1,20 +1,27 @@
-// RGB.cpp : Ce fichier contient la fonction 'main'. L'exécution du programme commence et se termine à cet endroit.
-//
-
+#include "rgb.h"
 #include <iostream>
 
-int main()
-{
-    std::cout << "Hello World!\n";
+using namespace std;
+
+int main() {
+    UColor couleur;
+
+    cout << "Entrer la valeur du rouge : ";
+    cin >> hex >> couleur.components.r;
+
+    cout << "Valeur du rouge : " << couleur.components.r << endl;
+
+    cout << "Entrer la valeur du vert : ";
+    cin >> hex >> couleur.components.g;
+
+    cout << "Valeur du vert : " << couleur.components.g << endl;
+
+    cout << "Entrer la valeur du bleu : ";
+    cin >> hex >> couleur.components.b;
+
+    cout << "Valeur du bleu : " << couleur.components.b << endl;
+
+    cout << "rgb(" << static_cast<int>(couleur.components.r) << ", " << static_cast<int>(couleur.components.g) << ", " << static_cast<int>(couleur.components.b) << ")" << endl;
+
+    return 0;
 }
-
-// Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage
-// Déboguer le programme : F5 ou menu Déboguer > Démarrer le débogage
-
-// Astuces pour bien démarrer : 
-//   1. Utilisez la fenêtre Explorateur de solutions pour ajouter des fichiers et les gérer.
-//   2. Utilisez la fenêtre Team Explorer pour vous connecter au contrôle de code source.
-//   3. Utilisez la fenêtre Sortie pour voir la sortie de la génération et d'autres messages.
-//   4. Utilisez la fenêtre Liste d'erreurs pour voir les erreurs.
-//   5. Accédez à Projet > Ajouter un nouvel élément pour créer des fichiers de code, ou à Projet > Ajouter un élément existant pour ajouter des fichiers de code existants au projet.
-//   6. Pour rouvrir ce projet plus tard, accédez à Fichier > Ouvrir > Projet et sélectionnez le fichier .sln.
